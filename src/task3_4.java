@@ -5,7 +5,9 @@ public class task3_4 {
 		if (tenki == true) {
 			System.out.println("選択をします");
 			System.out.println("散歩に行きます");
-		} else
+		} else {
 			System.out.println("DVDを見ます");
+			System.out.println("寝ます");
+		}
 	}
 }
