@@ -7,6 +7,13 @@ public class task3_6 {
 		for (int i = 0; i < 5; i++) {
 			System.out.println("0~9の数字を入力してください");
 			int num = scanner.nextInt();
+			if (num == ans) {
+				System.out.println("アタリ!");
+			    break;
+			} else {
+				System.out.println("違います");
+			}
 		}
+		System.out.println("ゲームを終了します");
 	}
 }
