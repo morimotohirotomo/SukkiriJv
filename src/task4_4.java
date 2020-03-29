@@ -4,9 +4,8 @@ public class task4_4 {
 		Scanner scanner = new Scanner(System.in);
 		int numbers[] = {3, 4, 9};
 		System.out.println("1桁の数字を入力してください");
-
+		int input = scanner.nextInt();
 		for (int n : numbers) {
-			int input = scanner.nextInt();
 			if (n == input) {
 				System.out.println("アタリ!");
 			}
