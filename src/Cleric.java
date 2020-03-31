@@ -1,4 +1,4 @@
-
+import java.util.*
 public class Cleric {
 	String name;
 	int hp = 50;
@@ -11,5 +11,14 @@ public class Cleric {
 		this.mp -= 5;
 		this.hp = this.MAX_HP;
 		System.out.println("HPを最大回復した");
+	}
+
+	public int prey(int sec) {
+		System.out.println(this.name + "は" + sec + "秒祈った");
+		int recover = new Random().nextInt(3) + sec;
+		int recoverAction = Math.min(this.MAX_MP - this.mp, recover);
+		this.mp += recoverAction;
+		System.out.println(recoverActon + "MP回復");
+		return recoverAction;
 	}
 }
