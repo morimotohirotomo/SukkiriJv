@@ -13,7 +13,8 @@ public class task5_4 {
 	}
 
 	public static double calcCircleArea(double radius) {
-		double area = radius * radius * 3.14;
+		final double Pi = 3.14;
+		double area = radius * radius * Pi;
 		return area;
 	}
 }
