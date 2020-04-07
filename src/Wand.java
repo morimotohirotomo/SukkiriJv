@@ -1,5 +1,5 @@
 
 public class Wand {
-	String name;
-	double power;
+	private String name;
+	private double power;
 }
