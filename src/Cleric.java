@@ -2,9 +2,9 @@ import java.util.*
 public class Cleric {
 	String name;
 	int hp = 50;
-	final int MAX_HP = 50;
+	static final int MAX_HP = 50;
 	int mp = 10;
-	final int MAX_MP = 10;
+	static final int MAX_MP = 10;
 
 	public void selfAid() {
 		System.out.println(this.name + "のセルフエイド");
@@ -18,7 +18,7 @@ public class Cleric {
 		int recover = new Random().nextInt(3) + sec;
 		int recoverAction = Math.min(this.MAX_MP - this.mp, recover);
 		this.mp += recoverAction;
-		System.out.println(recoverActon + "MP回復");
+		System.out.println(recoverAction + "MP回復");
 		return recoverAction;
 	}
 }
