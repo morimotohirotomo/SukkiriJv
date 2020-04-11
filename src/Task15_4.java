@@ -2,7 +2,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Task15_3 {
+public class Task15_4 {
 	public static void main(String[] args) {
 		Date now = new Date();
 		Calendar c = Calendar.getInstance();
