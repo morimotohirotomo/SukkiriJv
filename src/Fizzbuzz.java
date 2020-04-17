@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Fizzbuzz {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		System.out.println("1以上の整数を入力してください");
 		int input = scanner.nextInt();
 	    for(int i = 1; i <= input; i++) {
 	    	System.out.println(
