@@ -5,9 +5,8 @@ public class Fizzbuzz {
 		System.out.println("1以上の整数を入力してください");
 		int input = scanner.nextInt();
 	    for(int i = 1; i <= input; i++) {
-	    	System.out.println(
-	    		((i % 15 == 0) ? "FizzBuzz" : ((i % 5 == 0) ? "Buzz" : ((i % 3 == 0) ? "Fizz" : i)))
-	    	);
+	    	System.out.println
+	    		((i % 15 == 0) ? "FizzBuzz" : (i % 3 == 0) ? "Fizz" : (i % 5 == 0) ? "Buzz" : i);
 		}
 	}
 
